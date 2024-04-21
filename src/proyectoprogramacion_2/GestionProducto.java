@@ -8,7 +8,7 @@ package proyectoprogramacion_2;
  *
  * @author POWER
  */
-public interface GestionProducto {
+public interface GestionProducto  {
      public void buscarProducto();
-     public void AgregarProducto(Emprendimiento emprendedor1);
+     public void agregarProducto(Emprendimiento emprendedor1);
 }

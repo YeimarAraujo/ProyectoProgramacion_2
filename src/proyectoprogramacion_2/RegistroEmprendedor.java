@@ -16,7 +16,7 @@ public class RegistroEmprendedor implements GestionCuenta{
    
 
     @Override
-    public void Registrar() {
+    public void registrar() {
         System.out.println("                               ");
         System.out.println("CREAR CUENTA");
         System.out.println("Ingrese su nombre:");
@@ -66,7 +66,7 @@ public class RegistroEmprendedor implements GestionCuenta{
             scanner.nextLine();
 
             switch (opc1) {
-                case 1 -> registro.AgregarProducto(emprendedor1); 
+                case 1 -> registro.agregarProducto(emprendedor1); 
                 case 2 -> salir = true;
                 default -> System.out.println("Opción no valida");
             }

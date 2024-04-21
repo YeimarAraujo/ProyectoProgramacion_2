@@ -66,11 +66,11 @@ public static ArrayList<Emprendimiento> emprendimientosRegistrados = new ArrayLi
 
             switch (opcion) {
                 case 1 -> {
-                            registraru.Registrar();
+                            registraru.registrar();
                             registraru.iniciarsesion();
                           }
                 case 2 ->{ 
-                            registrare.Registrar();
+                            registrare.registrar();
                             registrare.iniciarsesion();
                          }
                 case 3 -> salir = true;

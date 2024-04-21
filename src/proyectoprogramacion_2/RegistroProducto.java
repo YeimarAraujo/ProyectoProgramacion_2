@@ -24,7 +24,7 @@ public class RegistroProducto implements GestionProducto {
 
   
     @Override
-    public void AgregarProducto(Emprendimiento emprendedor1) {
+    public void agregarProducto(Emprendimiento emprendedor1) {
     if (emprendedor1 != null) { 
         System.out.print("Ingrese el nombre del producto: ");
         String nombreProducto = scanner.nextLine();

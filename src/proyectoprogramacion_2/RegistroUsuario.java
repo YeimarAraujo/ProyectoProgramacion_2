@@ -14,7 +14,7 @@ import static proyectoprogramacion_2.Principal.usuariosRegistrados;
 public class RegistroUsuario implements GestionCuenta {
 Scanner scanner = new Scanner(System.in);
     @Override
-    public void Registrar() {
+    public void registrar() {
          System.out.println("                               ");
         System.out.println("CREAR CUENTA");
         System.out.println("Ingrese su nombre:");
@@ -35,7 +35,7 @@ Scanner scanner = new Scanner(System.in);
 
     @Override
     public void iniciarsesion() {
-                RegistroProducto registro = new RegistroProducto();
+         RegistroProducto registro = new RegistroProducto();
         Scanner scanner2 = new Scanner(System.in);
         boolean salir = false;
         System.out.println("                               ");

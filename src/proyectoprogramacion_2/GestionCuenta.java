@@ -9,6 +9,6 @@ package proyectoprogramacion_2;
  * @author POWER
  */
 public interface GestionCuenta {
-    public void Registrar();
+    public void registrar();
     public void iniciarsesion();
 }
