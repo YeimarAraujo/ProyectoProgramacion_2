@@ -8,7 +8,7 @@ package proyectoprogramacion_2;
  *
  * @author POWER
  */
-public abstract class Cuenta {
+public class Cuenta {
     protected String nombre;
     protected String correoElectronico;
     protected String contraseña;
