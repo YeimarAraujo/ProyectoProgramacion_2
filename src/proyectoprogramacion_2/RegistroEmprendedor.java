@@ -72,6 +72,7 @@ public class RegistroEmprendedor implements GestionCuenta{
             }
         }
     } else{
+            System.out.println("        ");
             System.out.println("Emprendedor no registrado.Porfavor registrarse");
     }
 

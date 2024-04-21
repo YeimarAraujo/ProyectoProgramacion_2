@@ -27,9 +27,11 @@ public static ArrayList<Emprendimiento> emprendimientosRegistrados = new ArrayLi
         RegistroEmprendedor registroe = new RegistroEmprendedor();
         Scanner scanner = new Scanner(System.in);
         boolean salir = false;
-
+        
         while (!salir) {
-            
+            System.out.println("Bienvenido al programa");
+            System.out.println("        ");
+            System.out.println("Menu");
             System.out.println("1. Iniciar sesion");
             System.out.println("2. Registrarse");
             System.out.println("3. Salir");
