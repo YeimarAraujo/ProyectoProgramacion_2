@@ -12,6 +12,5 @@ import java.util.ArrayList;
  */
 public interface GestionProducto {
      public void buscarProducto();
-     public ArrayList<Producto> obtenerProductos();
      public void AgregarProducto(Emprendimiento emprendedor1);
 }

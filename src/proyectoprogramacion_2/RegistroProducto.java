@@ -23,12 +23,6 @@ public class RegistroProducto implements GestionProducto {
         
     }
 
-
-    @Override
-    public ArrayList<Producto> obtenerProductos(){
-        return new ArrayList<>();
-    }
-
   
     @Override
     public void AgregarProducto(Emprendimiento emprendedor1) {
