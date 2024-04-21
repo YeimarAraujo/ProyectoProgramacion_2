@@ -9,13 +9,15 @@ package proyectoprogramacion_2;
  * @author POWER
  */
 public class Producto {
-     public String nombreProducto;
-     public double precio;
+     private String nombreProducto;
+     private double precio;
 
     public Producto(String nombreProducto, double precio) {
         this.nombreProducto = nombreProducto;
         this.precio = precio;
     }
+
+   
 
     public String getNombreProducto() {
         return nombreProducto;
@@ -32,4 +34,11 @@ public class Producto {
     public void setPrecio(double precio) {
         this.precio = precio;
     }
+
+    @Override
+    public String toString() {
+        return "Producto{" + "nombre del producto=" + nombreProducto +
+                ", precio=" + precio + '}';
+    }
+
 }

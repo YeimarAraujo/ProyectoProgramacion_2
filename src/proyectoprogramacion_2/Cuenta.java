@@ -8,17 +8,13 @@ package proyectoprogramacion_2;
  *
  * @author POWER
  */
-public class Cuenta {
+public abstract class Cuenta {
     protected String nombre;
     protected String correoElectronico;
     protected String contraseña;
     protected int edad;
 
     public Cuenta() {
-    }
-
-    public Cuenta(String nombre) {
-        this.nombre = nombre;
     }
    
     public Cuenta(String nombre, String correoElectronico, String contraseña, int edad) {
@@ -58,6 +54,9 @@ public class Cuenta {
 
     public void setEdad(int edad) {
         this.edad = edad;
+    }
+     public boolean verificarContraseña(String contraseña) {
+        return this.contraseña.equals(contraseña);
     }
 
     @Override

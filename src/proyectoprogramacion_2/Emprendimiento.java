@@ -4,6 +4,7 @@
  */
 package proyectoprogramacion_2;
 
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -12,55 +13,69 @@ import java.util.Map;
  * @author POWER
  */
 public class Emprendimiento extends Cuenta{
-    public static Map<String, Emprendimiento> emprendedoresRegistrados = new HashMap<>();
-    public String nombreEmprendimiento;
+    private static Map<String, Emprendimiento> emprendedoresRegistrados = new HashMap<>();
+    private String nombreEmprendimiento;
+    private ArrayList<Producto> productos;
 
-    public Emprendimiento(String nombreEmprendimiento, String nombre) {
-        super(nombre);
+    public Emprendimiento(String nombreEmprendimiento, ArrayList<Producto> productos) {
         this.nombreEmprendimiento = nombreEmprendimiento;
+        this.productos = productos;
     }
 
-    public Emprendimiento(String nombreEmprendimiento) {
+    public Emprendimiento(String nombreEmprendimiento){
         this.nombreEmprendimiento = nombreEmprendimiento;
+        this.productos = new ArrayList<>();
     }
 
-    
-  
     public String getNombreEmprendimiento() {
         return nombreEmprendimiento;
     }
 
+    public void setProductos(ArrayList<Producto> productos) {
+        this.productos = productos;
+    }
+
+ 
+
     public void setNombreEmprendimiento(String nombreEmprendimiento) {
         this.nombreEmprendimiento = nombreEmprendimiento;
     }
+    
+    public ArrayList<Producto> getProductos() {
+        return productos;
+    }
+    public void agregarProducto(Producto producto) {
+        productos.add(producto);
+    }
+    
+   public ArrayList<Producto> buscarProductos(String nombreProducto) {
+        ArrayList<Producto> resultados = new ArrayList<>();
+        for (Producto producto : productos) {
+            if (producto.getNombreProducto().equalsIgnoreCase(nombreProducto)) {
+                resultados.add(producto);
+            }
+        }
+        return resultados;
+    }
 
-
-
+    public static Map<String, Emprendimiento> getEmprendedoresRegistrados() {
+        return emprendedoresRegistrados;
+    }
+    
     @Override
     public String toString() {
-        return "Emprendimiento{" + super.toString()+ ", nombreEmprendimiento=" + nombreEmprendimiento + '}';
+        return "Emprendimiento{" + "nombreEmprendimiento=" + nombreEmprendimiento + ", productos=" + productos + '}';
     }
- 
 
     public static Emprendimiento registrarEmprendedor( String nombre, String nombreEmprendimiento, int edad, String correoElectronico, String contraseña) {
-        Emprendimiento nuevoEmprendedor = new Emprendimiento(nombreEmprendimiento,nombre);
-        emprendedoresRegistrados.put(correoElectronico, nuevoEmprendedor);
-        return nuevoEmprendedor;
+        Emprendimiento emprendedor1 = new Emprendimiento(nombreEmprendimiento);
+        emprendedoresRegistrados.put(correoElectronico, emprendedor1);
+        return emprendedor1;
     }
 
 
     public static Emprendimiento iniciarSesionEmprendimiento(String correoElectronico, String contraseña) {
         return emprendedoresRegistrados.getOrDefault(correoElectronico, null);
     }
-    /**
-      public  Emprendimiento agregarProducto(String nombreProducto, double precio) {
-        Producto producto = new Producto(nombreProducto, precio);
-        Producto[] nuevosProductos = Arrays.copyOf(productos, productos.length + 1);
-        nuevosProductos[productos.length] = producto;
-        productos = nuevosProductos;
-        System.out.println("Producto '" + producto.getNombreProducto() + "' agregado al emprendimiento con precio $" + producto.getPrecio() + ".");
-        return null;
-    }
-*/
-
+ 
 }
