@@ -15,7 +15,6 @@ import java.util.Scanner;
  */
 public class RegistroProducto implements GestionProducto {
     private final Map<Double, Producto>mapsProducto;
-    private static Emprendimiento emprendedor1;
     Scanner scanner = new Scanner(System.in);
     
     public RegistroProducto() {
@@ -70,6 +69,7 @@ public class RegistroProducto implements GestionProducto {
     }
 
     if (!productoEncontrado) { 
+        System.out.println("     ");
         System.out.println("No se encontraron productos con ese nombre.");
     }
     

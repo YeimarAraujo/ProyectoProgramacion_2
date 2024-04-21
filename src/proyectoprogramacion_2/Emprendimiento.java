@@ -17,6 +17,10 @@ public class Emprendimiento extends Cuenta{
     private String nombreEmprendimiento;
     private ArrayList<Producto> productos;
 
+    public Emprendimiento() {
+    }
+
+    
     public Emprendimiento(String nombreEmprendimiento, ArrayList<Producto> productos) {
         this.nombreEmprendimiento = nombreEmprendimiento;
         this.productos = productos;
@@ -34,9 +38,6 @@ public class Emprendimiento extends Cuenta{
     public void setProductos(ArrayList<Producto> productos) {
         this.productos = productos;
     }
-
- 
-
     public void setNombreEmprendimiento(String nombreEmprendimiento) {
         this.nombreEmprendimiento = nombreEmprendimiento;
     }

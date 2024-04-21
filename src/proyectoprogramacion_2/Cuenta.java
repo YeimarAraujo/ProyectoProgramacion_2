@@ -55,6 +55,7 @@ public abstract class Cuenta {
     public void setEdad(int edad) {
         this.edad = edad;
     }
+    
      public boolean verificarContraseña(String contraseña) {
         return this.contraseña.equals(contraseña);
     }

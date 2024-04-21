@@ -40,7 +40,7 @@ public class Usuario extends Cuenta{
         return usuario1;
     }
 
-    public static Usuario iniciarSesion(String correoElectronico, String contraseña){
+    public static Usuario iniciarSesionUsuario(String correoElectronico, String contraseña){
         return usuariosRegistrados.getOrDefault(correoElectronico, null);
     }
 }

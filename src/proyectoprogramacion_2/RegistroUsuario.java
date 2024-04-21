@@ -45,7 +45,7 @@ Scanner scanner = new Scanner(System.in);
         System.out.println("Ingrese su contrasena:");
         String contraseña = scanner.nextLine();
 
-         Usuario usuario1 = Usuario.iniciarSesion(correoElectronico, contraseña);
+         Usuario usuario1 = Usuario.iniciarSesionUsuario(correoElectronico, contraseña);
         if (usuario1 != null) {
              System.out.println("                               ");
             System.out.println("Inicio de sesion exitoso. Bienvenido, " + usuario1.getNombre());
