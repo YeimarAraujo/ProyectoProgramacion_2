@@ -11,7 +11,7 @@ import java.util.Scanner;
  *
  * @author POWER
  */
-public class ProyectoProgramacion_2 {
+public class Principal {
 public static ArrayList<Usuario> usuariosRegistrados = new ArrayList<>();
 public static ArrayList<Emprendimiento> emprendimientosRegistrados = new ArrayList<>();
 

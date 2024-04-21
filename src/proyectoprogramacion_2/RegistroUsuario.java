@@ -5,7 +5,7 @@
 package proyectoprogramacion_2;
 
 import java.util.Scanner;
-import static proyectoprogramacion_2.ProyectoProgramacion_2.usuariosRegistrados;
+import static proyectoprogramacion_2.Principal.usuariosRegistrados;
 
 /**
  *
