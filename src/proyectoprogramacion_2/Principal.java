@@ -67,9 +67,11 @@ public static ArrayList<Emprendimiento> emprendimientosRegistrados = new ArrayLi
             switch (opcion) {
                 case 1 -> {
                             registraru.Registrar();
+                            registraru.iniciarsesion();
                           }
                 case 2 ->{ 
                             registrare.Registrar();
+                            registrare.iniciarsesion();
                          }
                 case 3 -> salir = true;
                 default -> System.out.println("Opcion no valida");

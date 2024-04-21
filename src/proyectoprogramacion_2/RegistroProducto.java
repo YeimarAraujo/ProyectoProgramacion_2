@@ -42,9 +42,10 @@ public class RegistroProducto implements GestionProducto {
 
         Producto nuevoProducto = new Producto(nombreProducto, precio);
         emprendedor1.agregarProducto(nuevoProducto);
-
+         System.out.println("                               ");
         System.out.println("Producto agregado exitosamente.");
     } else {
+         System.out.println("                               ");
         System.out.println("No se pudo agregar el producto. El emprendimiento es nulo.");
     }
 }

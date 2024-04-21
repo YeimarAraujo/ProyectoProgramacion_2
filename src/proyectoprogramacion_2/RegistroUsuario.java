@@ -49,9 +49,10 @@ Scanner scanner = new Scanner(System.in);
         if (usuario1 != null) {
              System.out.println("                               ");
             System.out.println("Inicio de sesion exitoso. Bienvenido, " + usuario1.getNombre());
-            System.out.println("                               ");
+
            
              while (!salir) {
+            System.out.println("                               ");
             System.out.println("Que deseas hacer a continuacion?");
             System.out.println("1. Buscar producto");
             System.out.println("2. Salir");
@@ -68,6 +69,7 @@ Scanner scanner = new Scanner(System.in);
             }
         }
         } else{
+             System.out.println("                               ");
             System.out.println("Usuario no registrado.Porfavor registrarse");
         }
     }
