@@ -15,7 +15,7 @@ public class RegistroUsuario implements GestionCuenta {
 Scanner scanner = new Scanner(System.in);
     @Override
     public void registrar() {
-         System.out.println("                               ");
+        System.out.println("                               ");
         System.out.println("CREAR CUENTA");
         System.out.println("Ingrese su nombre:");
         String nombre = scanner.nextLine();
